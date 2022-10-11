@@ -7,5 +7,5 @@ class Avocado:
         self.data_source = data_source
 
     def __str__(self) -> str:
-        return f"Temperatura: {self.data_source.avocado_temp} \n" \
-               f"Umidità: {self.data_source.avocado_humid}"
+        return f"Temperatura: {self.data_source.avocado.temperature} \n" \
+               f"Umidità: {self.data_source.avocado.humidity}"
