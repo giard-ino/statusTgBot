@@ -3,7 +3,7 @@ from telegram.ext import Updater
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, ContextTypes
 from telegram.ext import CommandHandler, PollAnswerHandler
-from data import MocDataSource
+from data import PgsqlDataSource, MocDataSource
 from data import Avocado
 from os import environ
 
