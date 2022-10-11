@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+
+# telegram bot
+  status-tg-bot:
+    container_name: status-tg-bot
+    build: .
+    restart: unless-stopped
+    environment:
+      - TG_BOT_TOKEN="token"
