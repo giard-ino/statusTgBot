@@ -19,6 +19,7 @@ def avo(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text=avocado.__str__())
     logging.info(update.message.text)
 
+
 def set_handlers():
     dispatcher.add_handler(CommandHandler('avocado', avo))
     dispatcher.add_handler(PollAnswerHandler(avo))
